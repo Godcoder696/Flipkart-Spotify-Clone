@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+.visualizer{
+    display: flex;
+    margin-top: 42vh;
+    margin-left: 29.4vw;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+.box{
+    height: 30vh;
+    width: 30vh;
+    border: 0.5rem solid white;
+    animation: animate-Gif 3s infinite alternate-reverse;
+    position: absolute;
+}
+.box1{
+    height: 35vh;
+    width: 35vh;
+    border: 0.7rem solid white;
+    animation: animate1-Gif 4s infinite alternate-reverse;
+    position: absolute;
+}
+.box2{
+    height: 20vh;
+    width: 20vh;
+    border: 0.3rem solid white;
+    animation: animate2-Gif 3s infinite alternate-reverse;
+    position: absolute;
+}
+
+
+@keyframes animate2-Gif{
+    0%{
+        transform: rotate(calc(60deg));
+        height: 40vh;
+        width: 40vh;
+    }
+    100%{
+        transform: rotate(calc(360deg));
+        height: 25vh;
+        width: 25vh;
+    }
+}
+
+@keyframes animate1-Gif {
+    0%{
+        transform: rotate(calc(60deg));
+        height: 35vh;
+        width: 35vh;
+    }
+    100%{
+        transform: rotate(calc(360deg));
+        height: 60vh;
+        width: 60vh;
+    }
+}
+@keyframes animate-Gif {
+    0%{
+        transform: rotate(calc(0deg));
+        height: 30vh;
+        width: 30vh;
+    }
+    100%{
+        transform: rotate(calc(360deg));
+        height: 50vh;
+        width: 50vh;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpotify</title>
+    <link rel="icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+    <main>
+        <div class="main1">
+            <div class="leftSection">
+                <div class="navBar">
+                    <div class="container1">
+                        <a href="" class="navBarIcons" style="color: white; margin-left: 2.2vw;">
+                            <img src="/images/home-filled.png" class="icons">
+                            <div style="margin-left: 1.7vw;">Home</div>
+                        </a>
+                        <div class="navBarIcons">
+                            <button style="background: transparent; border: 0px;cursor: pointer;"><img src="/images/search.png" class="icons" id="icon1"></button>
+                            <div>
+                                <input type="text" class="songInput" id="songInput"placeholder=" Search songs"/>
+                                <div class="resultBox" id="resultBox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="library" >
+                    <a href="" class="libraryIcon"><img src="/images/library.png" class="icons">Your Library</a>
+                    <div class="libNav" >
+                        <button class="libOptions" id="allSongsList">All-Songs</button>
+                    </div>
+                    <div class="songList" id="songList">
+                        <div class="songListNavBar">
+                            <div class="heading">
+                                <div class="title">Title</div>
+                                <div class="dateAdded">Date Added</div> 
+                            </div>
+                        </div>
+                        <div class="songs" id="songs1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightSection">
+                <div class="content">
+                    <div class="visualizer" id="visualizer">
+                        <div class="box2"></div>
+                        <div class="box"></div>
+                        <div class="box1"></div>
+                    </div>
+                    <div class="box3"></div>
+                    <div class="myGif">
+                        <div class="bg">
+                            <img src="/song posters/Neffex_GrateFul.jpg" class="songBg" id="myGifBg">
+                        </div>
+                    </div>
+                    <img src="/images/info-black.png" class="info" id="info">
+                </div>
+                <div class="artistInfo" id="artistInfo">
+                </div>
+            </div>
+        </div>    
+        <div class="songBar">
+            <div class="leftcorner">
+                <img src="/song posters/Neffex_GrateFul.jpg" class="subPoster" id="subPoster">
+                <div class="title">
+                    <div class="name" id="smallName">Grateful</div>
+                    <div class="artist" id="smallArtistName">Neffex</div>
+                </div>
+                <div class="like"><img src="/images/heart.png" class="like" id="likeButton"></div>
+            </div>
+            <div class="controls">
+                <div class="controlImg">
+                    <img src="/images/previous.png" class="otherControls" id="previousButton">
+                    <img src="/images/play-button.png" class="play" id="play">
+                    <img src="/images/next.png" class="otherControls" id="nextButton">
+                </div>
+                <div class="fullSeekBar">
+                    <input type="range" class="progressBar" min="0" max="100" id="progressBar" value="0">
+                </div>
+            </div>
+            <div class="rightcorner">
+                <i><img src="/images/lyrics.png" class="soundImg"></i>
+                <i><img src="/images/queue.png" class="soundImg"></i>
+                <i><img src="/images/device.png" class="soundImg"></i>
+                <i><img src="/images/sound.png" class="soundImg" id="soundIcon"></i>
+                <input type="range" class="soundBar" id="soundBar" min="0" max="100">
+            </div>
+        </div>
+    </main>
+    <script src="/js/playSong.js"></script>
+</body>
+</html>
